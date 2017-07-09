@@ -71,3 +71,29 @@ MOVE               unigram probability: 0.000210
 MILES              unigram probability: 0.000206
 
 etc.
+
+### bigram distribution
+Running the program, we can also obtain the maximum likelihood of the bigram distribution.
+
+For example, the ten most likely words w' to follow the word “ONE” are (along with their bigram probabilities):
+
+HUNDRED            bigram probability:   0.209061
+
+<UNK>              bigram probability:   0.124304
+
+.POINT             bigram probability:   0.099952
+
+OF                 bigram probability:   0.073947
+
+THOUSAND           bigram probability:   0.068654
+
+MILLION            bigram probability:   0.031832
+
+,COMMA             bigram probability:   0.031622
+
+-HYPHEN            bigram probability:   0.030479
+
+HALF               bigram probability:   0.029139
+
+.PERIOD            bigram probability:   0.024376
+
