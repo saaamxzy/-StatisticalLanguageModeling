@@ -1,4 +1,4 @@
-# StatisticalLanguageModeling
+# Statistical Language Modeling
 
 This program shows the usage of some simple statistical models of English text. The data files contain 
 unigram and bigram counts for 500 frequently occurring tokens in English text. These tokens include 
@@ -97,3 +97,10 @@ HALF               bigram probability:   0.029139
 
 .PERIOD            bigram probability:   0.024376
 
+### Log-Likelihood of a sentence
+We can also compute the log-likelihood of a certain sentence under the above unigram
+and bigram models. For example, consider the following sentence:
+
+#### "The market fell by one hundred points last week."
+
+To compute the unigram likeli-hood, we use the equation:
