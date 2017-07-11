@@ -103,4 +103,34 @@ and bigram models. For example, consider the following sentence:
 
 #### "The market fell by one hundred points last week."
 
-To compute the unigram likeli-hood, we use the equation:
+To compute the unigram likelihood, we use the equation:
+
+![uni1](./uni1.png)
+
+and get Unigram Prob Lu = -57.198694409644055
+
+To compute the bigram likelihood, we use the equation:
+
+![bi1](./bi1.png)
+
+and get the Bigram probability Lb = -38.09716880644793
+
+#### Note: if a pair of words is not found in the training corpus, the bigram probability will be undefined.
+
+### Mixer Model
+
+Now we establish a mixer model that predicts words from a weighted interpolation of the unigram
+and bigram models:
+
+![mixer](./mixer.png)
+
+where λ ∈ [0, 1] determines how much weight is attached to each prediction. Under this mixture
+model, the log-likelihood of the sentence:
+
+#### The fourteen officials sold fire insurance.
+
+is given by:
+
+![log_mixer](./log_mixer.png)
+
+Th
